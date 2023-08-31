@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="./public/abcweb-1.js"></script>
+<script src="http://moinejf.free.fr/js/snd-1.js"></script>
+<script src="http://moinejf.free.fr/js/follow-1.js" type="text/javascript"></script>
+</head>
+<body>
+    <style>
+        .str{
+            margin: 100px;
+            word-spacing: 0;
+        }
+    </style>
+    <div>
+                <!-- 这里必须要顶着旁边写 -->
+                <script id="str" type="text/vnd.abc">
+                    X:1
+                    T:J'ai du bon tabac
+                    %%jianpu 1
+                    C:Trad.
+                    M:2/4
+                    L:1/8
+                    Q:1/4=120
+                    K:C
+                    CDEC|D2DE|F2F2|E2E2|CDEC|D2DE|F2G2|C4:|
+                    G2GF|E2DE|F2G2|F2E2|G2GF|E2DE|F2G2|D4|
+                    CDEC|D2DE|F2F2|E2E2|CDEC|D2DE|F2G2|C4||
+                    </script>
+    </div>
+
+
+
+  <!-- <script>
+    setTimeout(()=>{
+        setABCStr()
+    },0)
+    function setABCStr(){
+        const abcStrEle =  document.getElementsByTagName("script")
+        Array.from(abcStrEle).forEach(item => {
+            if(item.getAttribute("id") === 'str'){
+                item.innerHTML = 
+                `X:1
+                T:J'ai du bon tabac
+                C:Trad.
+                M:2/4
+                L:1/8
+                Q:1/4=120
+                K:C
+                CDEC|D2DE|F2F2|E2E2|CDEC|D2DE|F2G2|C4:|
+                G2GF|E2DE|F2G2|F2E2|G2GF|E2DE|F2G2|D4|
+                CDEC|D2DE|F2F2|E2E2|CDEC|D2DE|F2G2|C4||
+                `
+                // item.innerHTML
+                // console.log(item.innerHTML.replace(), 'item')
+            }
+        });
+    }
+    // console.log(abcStrEle, 666)
+  </script> -->
+</body>
+</html>
