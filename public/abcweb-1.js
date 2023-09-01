@@ -164,40 +164,38 @@ Printing may be bad because the file contains pure HTML and %%pageheight\
         
         sa = document.getElementsByName("text/vnd.abc")
         let index = 0
-        while (index<=sa.length) {
-            console.log("多少次");
+        while (index<=sa.length && sa.length) {
+            console.log("渲染多少次");
             index ++
-            
-            // sa = document.getElementsByTagName('script')
-            // console.log(s, 88);
-
+        
             for (i = 0; i < sa.length; i++) {
                 s = sa[i]
-                // if (s.name == 'text/vnd.abc')
-                //     break
             }
-            // console.log(s, 's')
-            // if (i > sa.length)
-            //     break
-            // c = get_p(s)
             div = document.createElement('div')
-            console.log(s, 's',s.innerText,6.1);
                 let innerTextStr = ''
                 innerTextStr = s.innerText.replace(/\n/g, "@@@")   // 占位
                 innerTextStr = innerTextStr.replace(/\x20/g, "")   // 去掉多余空格
                 let arr = innerTextStr.split("@@@")
                 let resStr =  arr.join("\n")
-                resStr = resStr.replace("jianpu","$& ")
-                console.log(resStr, 6.5)
-                
+                resStr = resStr.replace(/jianpu/g,"$& ")
 
-                abc2svg.music[0].t += resStr
-                if (!abc2svg.music[0].d)
+                // TODO: 简谱显示样式比较丑
+                resStr = resStr.replace(/(K:[A-Za-z].*$)/gm, '$1 splitFlag')
+                let tempArr = resStr.split("splitFlag")
+                let firstStr = tempArr[0]
+                let secondStr = tempArr[1]
+                secondStr = secondStr.replace(/\n/g,"")
+                resStr = firstStr+ "\n" + secondStr
+                
+                abc2svg.music[0].t = resStr
+                if (!abc2svg.music[0].d){
                     abc2svg.music[0].d = div
-            // } else { abc2svg.music.push({ n: "mus" + abc2svg.music.length, t: c + s.innerHTML, d: div }) }
-            console.log(abc2svg.music, abc2svg.music[0].t, 'abc2svg.music', 6.2)
+            } 
+            // else { abc2svg.music.push({ n: "mus" + abc2svg.music.length, t: c + s.innerHTML, d: div }) }
+            console.log(abc2svg.music, abc2svg.music[0].t, 'abc2svg.music', 9.0)
             // debugger
             s.parentNode.replaceChild(div, s)
+
         }
     }
     function musgen(mu) {

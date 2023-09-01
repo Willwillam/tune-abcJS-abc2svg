@@ -16,9 +16,9 @@
     <!-- 大鱼 -->
     <div id="whale"></div>
     <!-- 大鱼简谱 -->
-    <div name="text/vnd.abc" style="display: none;">
+    <!-- <div name="text/vnd.abc" style="display: none;">
       {{this.whale}}
-    </div>
+    </div> -->
     <!-- 大鱼节拍谱子 -->
     <div class="beat" id="trans-whale"></div>
     <div style="margin: 40px 0">
@@ -95,6 +95,8 @@ export default {
   },
   methods:{
     transStr(absStr){ 
+
+      // 在K:那行加上 style=x; 如果其他地方有style=x, 也替换成style=x
       let resStr = absStr.replace(/(K:[A-Za-z].*$)/gm, '$1 style=x splitFlag')
       resStr = resStr.replace(/style=[a-zA-Z]+/g, 'style=x')
 
@@ -119,15 +121,37 @@ export default {
 
       return resStr
     },
+    // 处理abcStr
+    formatAbcStr(abcStr){
+        let resStr = abcStr.replace(/M:/,'splitFlag$&')
+        let strArr = resStr.split("splitFlag")
+        let firstStr = strArr[0]
+        let secondStr = strArr[1]
+        firstStr = firstStr.replace(/\x20/g,'')
+        let strFormat = firstStr + secondStr
+        return strFormat
+    },  
     renderTune(ele, beatEle,abcStr){
-      abcjs.renderAbc(ele ,abcStr);
-      let transStr = this.transStr(abcStr)
-      // 对于简谱的abcString单独处理
+      // console.log(transStr, 66)
+      let strFormat = this.formatAbcStr(abcStr)
+      abcjs.renderAbc(ele ,strFormat);
+      let transStr = this.transStr(strFormat)
+      // 处理简谱的abcString
+      
       let jianpuStr = abcStr.replace("L:", '%%jianpu 1\n$&')
+      if(ele === 'balloonFlower'){
+        // jianpuStr = abcStr.replace(/(K:[A-Za-z].*$)/gm, '$1 splitFlag')
+        // let jianpuArr = jianpuStr.split("splitFlag")
+        // let firstStr = jianpuArr[0]
+        // let secondStr = jianpuArr[1]
+        // secondStr = secondStr.replace(/\n/,"")
+        // let finalJianpuStr = firstStr + secondStr
+        // console.log(finalJianpuStr, 'jianpuStr', 99)
+      }
       this[ele] = jianpuStr
-      // console.log(jianpuStr, 'jianpuStr')
-      // 节拍谱
+      // 节拍谱     
       abcjs.renderAbc(beatEle, transStr, {add_classes: true});
+      
     },
     mixuReander(){
       this.renderTune('mixue','trans-mixue', abcStr1)
@@ -154,12 +178,9 @@ export default {
       this.balloonFlowerRender()
       this.peaCockRender()
       this.motherlandRender()
-      // window.abcStr1 = abcStr1
-
     }
   },
   mounted(){
-    // this.balloonFlowerStr = abcStr1
     this.init()
   }
 }
