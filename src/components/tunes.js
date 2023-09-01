@@ -97,7 +97,6 @@ const abcStr6 = `X:1
             K:none
             I:percmap E B 64 normal
             V:1
-            %% jianpu 1
             !f! c'/c'/d'/d'/e'/e'/ d'/d'/c'/c'/a/a/ |[M:9/8] ba>e g3- g3 | 
             [M:6/8] c'/c'/d'/d'/e'/e'/ d'/d'/c'/c'/a/a/ |[M:9/8] bg>e a3- a3 |$[M:6/8]!mf! (gfe d3) | 
             (BAG) e3 |!f! f3 d2 c |!>(! c3-!>)! c3 |"^A" z6 |!mf! (.c/.c/.e/.e/.g/.g/ .c'/.c'/.g/.g/.e/.e/) |$ 
@@ -112,7 +111,6 @@ const abcStr6 = `X:1
             [M:6/8]!mf! (gfe d3) | (BAG e3) |$!<(! g3 d'2!<)! c' |!f! c'c'/c'/c' c'c'c' | c'c'/c'/c' c'c'c' | 
             c' z z c' z z |!ff! !fermata!c'6 |] 
             V:2
-            %% jianpu 1
             [K:D]
             [M:6/8]!mf! (agf e3) | (cBA) f3 |!f! g3 e2 d |!>(! d3-!>)! d3 | z6 | z6 |$ z6 | z6 | z6 | z6 | 
             z6 |$ z6 |!mf! (ABA) (GFE) | D3 A,3 | DFd ce>d | B3- B3 | z6 |$ z6 | z6 | z6 |!f! def edB | 
@@ -122,7 +120,6 @@ const abcStr6 = `X:1
             [M:9/8] cA>F B3- B3 |[M:6/8]!mf! (agf e3) | (cBA F3) |$!<(! A3 a2!<)! a |!f! aa/a/a aaa | 
             aa/a/a aaa | d z z d z z |!ff! !fermata!d6 |] 
             V:3
-            %% jianpu 1
             [K:D]!f! ABd cBF |[M:9/8] AG>C F3- F3 |[M:6/8] ABd cBF |[M:9/8] AF>C G3- G3 |$ 
             [M:6/8]!mf! (AGF E3) | (cBA) f3 |!f! e3 c2 d |!>(! d3-!>)! d3 | z6 | z6 |$ z6 | z6 | z6 | z6 | 
             z6 |$ z6 |!mf! (ABA) (GFE) | D3 A,3 | DFd ce>d | B3- B3 | z6 |$ z6 | z6 | z6 |!f! ABd cBF | 
@@ -133,7 +130,6 @@ const abcStr6 = `X:1
             !f! [df][df]/[df]/[df] [df][df][df] | [df][df]/[df]/[df] [df][df][df] | d z z d z z | 
             !ff! !fermata!d6 |] 
             V:4
-            %% jianpu 1
             [K:A]!f! abc' baf |[M:9/8] gf>c e3- e3 |[M:6/8] abc' baf |[M:9/8] ge>c f3- f3 |$ 
             [M:6/8]!mf! (edc B3) | (GFE) c3 |!f! d3 B2 A |!>(! A3-!>)! A3 | z6 | z6 |$ z6 | z6 | z6 | z6 | 
             z6 |$ z6 |!mf! (efe) (dcB) | A3 E3 | Aca gb>a | f3- f3 | z6 |$ z6 | z6 | z6 |!f! abc' baf | 
@@ -143,7 +139,6 @@ const abcStr6 = `X:1
             [M:9/8] GE>C F3- F3 |[M:6/8]!mf! (edc B3) | (gfe c3) |$!<(! E3 d2!<)! c |!f! cc/c/c ccc | 
             cc/c/c ccc | c z z ^B z z |!ff! !fermata!c6 |] 
             V:5
-            %% jianpu 1
             [K:D]!f! D3 E3 |[M:9/8] A3 cBA GFE |[M:6/8] D3 E3 |[M:9/8] A3 BAG FED |$[M:6/8]!mf! A3 (EAB | 
             c3) FAB |!f! e3 g2 f |!>(! f3-!>)! f3 |!mf! (aba) (gfe) | d3 A3 |$ dfd' c'b>f | a3- a3 | 
             (bc'b) (agf) | e3 B3 | cBA ad>e |$ f3- f3 |!mf! (aba) (gfe) | d3 A3 | dfd' c'e'>d' | b3- b3 | 
@@ -153,7 +148,6 @@ const abcStr6 = `X:1
             !f! D3 E3 |[M:9/8] A3 cBA GFE |$[M:6/8] D3 E3 |[M:9/8] A3 BAG FED |[M:6/8]!mf! A3 EAB | c3 FAB |$ 
             !<(! e3 g2!<)! f |!f! ff/f/f fff | ff/f/f fff | f z z ^e z z |!ff! !fermata!f6 |] 
             V:6
-            %% jianpu 1
             [K:G]!f! z GG z AA |[M:9/8] z FF FF/F/F FFF |[M:6/8] z GG z AA |[M:9/8] z FF GG/G/G GGG |$ 
             [M:6/8]!mf! z GG z FF | z FF z GG |!f! z AA z F/F/F |!>(! z GG z G!>)!G | z!mf! GG z FF | 
             z GG z GG |$ z GG z FF | z F/F/F FFF | z GG z GG | z AA z AA | z FF z FF |$ z F/F/F FFF | 
@@ -166,7 +160,6 @@ const abcStr6 = `X:1
             [M:9/8] z FF GG/G/G GGG |[M:6/8]!mf! z GG z FF | z FF z GG |$!<(! z F/F/F F2!<)! z | 
             !f! GG/G/G GGG | GG/G/G GGG | G z z G z z |!ff! !fermata!G6 |] 
             V:7
-            %% jianpu 1
             [K:G]!f! z B,B, z CC |[M:9/8] z B,B, CC/C/C CCC |[M:6/8] z B,B, z CC |[M:9/8] z B,B, CC/C/C CCC |$ 
             [M:6/8]!mf! z B,B, z A,A, | z B,B, z B,B, |!f! z CC z C/C/C |!>(! z B,B, z B,!>)!B, | 
             z!mf! B,B, z CC | z B,B, z B,B, |$ z B,B, z B,B, | z A,/A,/A, A,A,A, | z B,B, z B,B, | z CC z CC | 
@@ -181,7 +174,6 @@ const abcStr6 = `X:1
             [M:6/8]!mf! z B,B, z A,A, | z B,B, z B,B, |$!<(! z C/C/C C2!<)! z |!f! B,B,/B,/B, B,B,B, | 
             B,B,/B,/B, B,B,B, | B, z z ^A, z z |!ff! !fermata!B,6 |] 
             V:8
-            %% jianpu 1
             [K:D]!f! def edB |[M:9/8] cB>F AA/A/A AAA |[M:6/8] def edB |[M:9/8] cA>F BB/B/B BBB |$[M:6/8] z6 | 
             z6 |!f! G3 E2 D |!>(! D3- D2!>)! z | z6 | z6 |$ z6 | z6 | z6 | z6 | z6 |$ z6 | z6 | 
             z!mf! A/A/A AAA | z6 | z B/B/B BBB | z6 |$ z6 | A3 A3 | AA/A/A AAA |!f! def edB | 
@@ -192,7 +184,6 @@ const abcStr6 = `X:1
             [M:6/8]!mf! (AGF E3) | (cBA F3) |$!<(! A3 A2!<)! A |!f! dd/d/d ddd | dd/d/d ddd | d z z d z z | 
             !ff! !fermata!d6 |] 
             V:9
-            %% jianpu 1
             [K:D]!f! ABd cBF |[M:9/8] AG>C FF/F/F FFF |[M:6/8] ABd cBF |[M:9/8] AF>C GG/G/G GGG |$[M:6/8] z6 | 
             z6 |!f! E3 C2 D |!>(! D3- D2!>)! z | z6 | z6 |$ z6 | z6 | z6 | z6 | z6 |$ z6 | z6 | 
             z!mf! F/F/F FFF | z6 | z G/G/G GGG | z6 |$ z6 | E3 E3 | FF/F/F FFF |!f! ABd cBF | 
@@ -202,7 +193,6 @@ const abcStr6 = `X:1
             [M:6/8] ABd cBF |[M:9/8] AF>C GG/G/G GGG |[M:6/8]!mf! (AGF E3) | (cBA F3) |$!<(! E3 E2!<)! F | 
             !f! AA/A/A AAA | AA/A/A AAA | A z z _B z z |!ff! !fermata!A6 |] 
             V:10
-            %% jianpu 1
             !f! G,3 A,3 |[M:9/8] G,3 B,A,G, F,E,D, |[M:6/8] G,3 A,3 |[M:9/8] G,3 A,G,F, E,D,C, |$ 
             [M:6/8]!mf! G,3 (D,G,A, | B,3) E,G,A, |!f! A,3 G,3 |!>(! G,3- G,2!>)! z |!mf! (G,A,G,) (F,E,D,) | 
             C,3 G,,3 |$ C,E,C B,A,>E, | G,3- G,3 | (A,B,A,) (G,F,E,) | D,3 A,,3 | B,,A,,G,, G,C,>D, |$ 
@@ -215,7 +205,6 @@ const abcStr6 = `X:1
             [M:6/8] G,3 A,3 |[M:9/8] G,3 A,G,F, E,D,C, |[M:6/8]!mf! G,3 D,G,A, | B,3 E,G,A, |$ 
             !<(! G,3 G,2!<)! z |!f! G,G,/G,/G, CG,E, | G,G,/G,/G, CG,E, | G, z z _A, z z |!ff! !fermata!G,6 |] 
             V:11
-            %% jianpu 1
             !f! E,3 F,3 |[M:9/8] E,3 B,A,G, F,E,D, |[M:6/8] E,3 F,3 |[M:9/8] E,3 A,G,F, E,D,C, |$ 
             [M:6/8]!mf! G,3 (D,G,A, | B,3) E,G,A, |!f! F,3 F,3 |!>(! E,3- E,2!>)! z |!mf! (G,A,G,) (F,E,D,) | 
             C,3 G,,3 |$ C,E,C B,A,>E, | G,3- G,3 | (A,B,A,) (G,F,E,) | D,3 A,,3 | B,,A,,G,, G,C,>D, |$ 
@@ -229,7 +218,6 @@ const abcStr6 = `X:1
             !<(! F,3 F,2!<)! z |!f! E,E,/E,/E, G,E,C, | E,E,/E,/E, G,E,C, | E, z z _E, z z | 
             !ff! !fermata!E,6 |] 
             V:12
-            %% jianpu 1
             !f! C,3 D,3 |[M:9/8] G,3 B,A,G, F,E,D, |[M:6/8] C,3 D,3 |[M:9/8] G,3 A,G,F, E,D,C, |$ 
             [M:6/8]!mf! G,3 (D,G,A, | B,3) E,G,A, |!f! B,3 G,2 G, |!>(! C3- C2!>)! z |!mf! (G,A,G,) (F,E,D,) | 
             C,3 G,,3 |$ C,E,C B,A,>E, | G,3- G,3 | (A,B,A,) (G,F,E,) | D,3 A,,3 | B,,A,,G,, G,C,>D, |$ 
@@ -242,7 +230,6 @@ const abcStr6 = `X:1
             [M:9/8] G,3 A,G,F, E,D,C, |[M:6/8]!mf! G,3 D,G,A, | B,3 E,G,A, |$!<(! D3 B,2!<)! C | 
             !f! CC/C/C CG,E, | CC/C/C CG,E, | C z z C z z |!ff! !fermata!C,6 |] 
             V:13
-            %% jianpu 1
             !f! C,,3 A,,,3 |[M:9/8] E,,3 G,,3- G,,3 |[M:6/8] C,3 A,,3 |[M:9/8] E,,3 F,,3- F,,3 |$ 
             [M:6/8]!mf! C,, z z G,, z z | E,, z z A,,, z z |!f! D,,3 C,,3 |!>(! C, z z G,, z!>)! z | 
             !mf! C, z z G,, z z | C,, z z G,, z z |$ A,, z z E,, z z | G,,3 G,,F,,D,, | A,, z z E,, z z | 
@@ -258,7 +245,6 @@ const abcStr6 = `X:1
             !<(! G,,3!<)! G,,3 |!f! C,C,/C,/C, C,G,,E,, | C,C,/C,/C, C,G,,E,, | C, z z C, z z | 
             !ff! !fermata!C,,6 |] 
             V:14
-            %% jianpu 1
             !f! z EE z EE |[M:9/8] z EE z E/E/E EEE |[M:6/8] z EE z EE |[M:9/8] z EE z E/E/E EEE |$ 
             [M:6/8]!mf! z EE z EE | z EE z EE |!f! z EE z E/E/E |!>(! z EE z E!>)!E |!mf! z EE z EE | 
             z EE z EE |$ z EE z EE | z E/E/E EEE | z EE z EE | z EE z EE | z EE z EE |$ z E/E/E EEE | 
@@ -271,7 +257,6 @@ const abcStr6 = `X:1
             [M:6/8] z EE z EE |[M:9/8] z EE z E/E/E EEE |[M:6/8]!mf! z EE z EE | z EE z EE |$ 
             !<(! z E/E/E!<)! E3 |!f! z E/E/E z3 | z E/E/E z3 | E z z E z z |!ff! !///!!fermata!E6 |] 
             V:15
-            %% jianpu 1
             !f! E3 E3 |[M:9/8] E3 E3 E3 |[M:6/8] E3 E3 |[M:9/8] E3 E3 E3 |$[M:6/8]!mf! E3 E3 | E3 E3 | 
             !f! E3 E3 |!>(! E3!>)! E3 |!mf! E3 E3 | E3 E3 |$ E3 E3 | E3 E3 | E3 E3 | E3 E3 | E3 E3 |$ E3 E3 | 
             !mf! E3 E3 | E3 E3 | E3 E3 | E3 E3 | E3 E3 |$ E3 E3 | E3 E3 | E3 z3 |!f! E3 E3 |[M:9/8] E3 E3 E3 |$ 
@@ -281,7 +266,6 @@ const abcStr6 = `X:1
             [M:9/8] E3 E3 E3 |[M:6/8]!mf! E3 E3 | E3 E3 |$!<(! E3!<)! E3 |!f! E3 z3 | E3 z3 | E3 E3 | 
             !ff! !///!!fermata!E6 |] 
             V:16
-            %% jianpu 1
             !f! E3 z3 |[M:9/8] z9 |[M:6/8] E3 z3 |[M:9/8] z9 |$[M:6/8] z6 | z6 |!f! E3 z3 | z6 | z6 | z6 |$ 
             z6 | z6 | z6 | z6 | z6 |$ z6 | z6 | z6 | z6 | z6 | z6 |$ z6 | z6 | z6 |!f! E3 z3 |[M:9/8] z9 |$ 
             [M:6/8] E3 z3 |[M:9/8] z9 |[M:6/8] z6 | z6 |!f! E3 z3 |$ z6 | z6 | z6 | z6 | z6 | z6 | z6 |$ z6 | 

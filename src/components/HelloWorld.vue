@@ -60,13 +60,13 @@
     <div class="beat" id="trans-mixue"></div>
 
     <!-- 我和我的祖国 -->
-    <!-- <div id="motherland"></div> -->
+    <div id="motherland"></div>
     <!-- 我和我的祖国简谱 -->
     <!-- <div name="text/vnd.abc" style="display: none;">
       {{this.motherland}}
     </div> -->
     <!-- 我和我的祖国节拍谱子 -->
-    <!-- <div class="beat" id="trans-motherland"></div> -->
+    <div class="beat" id="trans-motherland"></div>
     <div style="margin: 40px 0">
       ==========================================================================================  
     </div> 
@@ -135,20 +135,12 @@ export default {
       // console.log(transStr, 66)
       let strFormat = this.formatAbcStr(abcStr)
       abcjs.renderAbc(ele ,strFormat);
+
       let transStr = this.transStr(strFormat)
       // 处理简谱的abcString
-      
       let jianpuStr = abcStr.replace("L:", '%%jianpu 1\n$&')
-      if(ele === 'balloonFlower'){
-        // jianpuStr = abcStr.replace(/(K:[A-Za-z].*$)/gm, '$1 splitFlag')
-        // let jianpuArr = jianpuStr.split("splitFlag")
-        // let firstStr = jianpuArr[0]
-        // let secondStr = jianpuArr[1]
-        // secondStr = secondStr.replace(/\n/,"")
-        // let finalJianpuStr = firstStr + secondStr
-        // console.log(finalJianpuStr, 'jianpuStr', 99)
-      }
       this[ele] = jianpuStr
+
       // 节拍谱     
       abcjs.renderAbc(beatEle, transStr, {add_classes: true});
       
