@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="tune">
     <!-- 桔梗谣 -->
     <div id="balloonFlower"></div>
     <!-- 桔梗谣简谱 -->
@@ -60,13 +60,13 @@
     <div class="beat" id="trans-mixue"></div>
 
     <!-- 我和我的祖国 -->
-    <div id="motherland"></div>
+    <!-- <div id="motherland"></div> -->
     <!-- 我和我的祖国简谱 -->
     <!-- <div name="text/vnd.abc" style="display: none;">
       {{this.motherland}}
     </div> -->
     <!-- 我和我的祖国节拍谱子 -->
-    <div class="beat" id="trans-motherland"></div>
+    <!-- <div class="beat" id="trans-motherland"></div> -->
     <div style="margin: 40px 0">
       ==========================================================================================  
     </div> 
@@ -96,7 +96,7 @@ export default {
   methods:{
     transStr(absStr){ 
 
-      // 在K:那行加上 style=x; 如果其他地方有style=x, 也替换成style=x
+      // 在K:那行加上 style=x; 如果其他地方有style=XXX, 也替换成style=x
       let resStr = absStr.replace(/(K:[A-Za-z].*$)/gm, '$1 style=x splitFlag')
       resStr = resStr.replace(/style=[a-zA-Z]+/g, 'style=x')
 
@@ -111,7 +111,7 @@ export default {
       transStrSecond = transStrSecond.replace(/!ff!/g, 'ZZZ2')
       transStrSecond = transStrSecond.replace(/!mf!/g, 'ZZZ3')
       transStrSecond = transStrSecond.replace(/!fff!/g, 'ZZZ4')
-      transStrSecond = transStrSecond.replace(/[a-gA-G]/g, 'B')
+      transStrSecond = transStrSecond.replace(/[a-gA-G]/g, 'B') // 把所有a-gA-G的音符都替换成B
       transStrSecond = transStrSecond.replace(/ZZZ0/g, '!f!')
       transStrSecond = transStrSecond.replace(/ZZZ1/g, 'fermata')
       transStrSecond = transStrSecond.replace(/ZZZ2/g, '!ff!')
@@ -132,7 +132,6 @@ export default {
         return strFormat
     },  
     renderTune(ele, beatEle,abcStr){
-      // console.log(transStr, 66)
       let strFormat = this.formatAbcStr(abcStr)
       abcjs.renderAbc(ele ,strFormat);
 
@@ -141,7 +140,7 @@ export default {
       let jianpuStr = abcStr.replace("L:", '%%jianpu 1\n$&')
       this[ele] = jianpuStr
 
-      // 节拍谱     
+      // 渲染节拍谱     
       abcjs.renderAbc(beatEle, transStr, {add_classes: true});
       
     },
@@ -155,7 +154,7 @@ export default {
       this.renderTune('whale','trans-whale',abcStr3)
     },
     balloonFlowerRender(){
-      this.renderTune('balloonFlower','trans-balloonFlower',abcStr4, 'numbered-balloonFlower')
+      this.renderTune('balloonFlower','trans-balloonFlower',abcStr4,)
     },
     peaCockRender(){
       this.renderTune('peaCock','trans-peaCock',abcStr5)

@@ -161,7 +161,9 @@ Printing may be bad because the file contains pure HTML and %%pageheight\
                     + decodeURIComponent(k[i].replace('=', ' '))
                     + '\n'
         }
-        
+        // 目前修改的所有源码都在这个函数里面, 后期有问题可以拿线上的源码对比
+        // 修改点: 1. 用div的渲染替换script标签的渲染
+        // 2. 格式化abcString, 使得能够正常渲染简谱
         sa = document.getElementsByName("text/vnd.abc")
         let index = 0
         while (index<=sa.length && sa.length) {
@@ -179,7 +181,7 @@ Printing may be bad because the file contains pure HTML and %%pageheight\
                 let resStr =  arr.join("\n")
                 resStr = resStr.replace(/jianpu/g,"$& ")
 
-                // TODO: 简谱显示样式比较丑
+                // 处理简谱小节数的显示
                 resStr = resStr.replace(/(K:[A-Za-z].*$)/gm, '$1 splitFlag')
                 let tempArr = resStr.split("splitFlag")
                 let firstStr = tempArr[0]
@@ -187,7 +189,7 @@ Printing may be bad because the file contains pure HTML and %%pageheight\
                 secondStr = secondStr.replace(/\n/g,"")
                 resStr = firstStr+ "\n" + secondStr
                 
-                abc2svg.music[0].t = resStr
+                abc2svg.music[0].t += resStr
                 if (!abc2svg.music[0].d){
                     abc2svg.music[0].d = div
             } 
